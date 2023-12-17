@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cart_ic"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_toEndOf="@id/imageProduct"
+        android:layout_alignTop="@id/imageProduct"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_below="@id/textProductName"
+        android:layout_toEndOf="@id/imageProduct"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textProductPrice"
+        android:layout_toEndOf="@id/imageProduct"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp">
+
+        <Button
+            android:id="@+id/btnBuyNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3498db"
+            android:text="Buy Now" />
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:background="#3498db"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>
+
